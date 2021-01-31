@@ -1,0 +1,66 @@
+body {
+  background-color: #778899;
+}
+
+.player-vez {
+  color: yellow;
+}
+
+.board-container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.board-container h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.board button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15vw;
+  background: none;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.board button::after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.botao-reset {
+  width: 100px;
+  background-color: #808080;
+  padding: 10px 20px;
+  border: none;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 45%;
+}
+
+.botao-reset:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+.text-botao-reset {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.winner {
+    font-size: 5vw;
+    color: greenyellow; 
+
+}
